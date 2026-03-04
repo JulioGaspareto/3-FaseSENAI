@@ -7,3 +7,16 @@
     width: 200px;
     box-shadow: 2px 2px 6px rgba(0,0,0,1);
 }
+
+
+.cardContainerApi{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.input{
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
