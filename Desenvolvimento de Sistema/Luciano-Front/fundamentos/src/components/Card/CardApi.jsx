@@ -18,9 +18,17 @@ const CardApi = () => {
      useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(res => res.json())
-        .then(data => setUsers(data))
+  
+        .then((data => {
+
+            const filtrados = data.filter((user) => (
+                user.name.toLowerCase().includes(filtro.toLowerCase())
+            ))
+            setUsers(filtrados)
+        }))
+        // .then(data => setUsers(data))
         
-    }, [])
+    }, [filtro])
 
 
   return (
