@@ -1,11 +1,11 @@
-import styles from './Card.module.css'
+import styles from "./Card.module.css"
 
-function Card({nome,idade , cidade}) {
+const Card = ({nome,idade,cidade}) => {
   return (
     <div className={styles.card}>
         <h3>Nome: {nome}</h3>
-        <p>Idade: {idade} </p>
-        <p>cidade: {cidade}</p>
+        <p>Idade: {idade}</p>
+        <p>Cidade: {cidade}</p>
     </div>
   )
 }

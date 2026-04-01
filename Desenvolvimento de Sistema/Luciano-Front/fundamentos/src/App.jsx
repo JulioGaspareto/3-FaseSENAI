@@ -1,18 +1,16 @@
-import {Footer} from "./layout/Footer/Footer"
-import Header from "./layout/Header"
-import Body from "./layout/Body/Body"
+import Body from "./layouts/Body/Body"
+import { Footer } from "./layouts/Footer/Footer"
+import Header from "./layouts/Header"
+
 
 function App() {
+  
 
   return (
     <>
-     <Header titulo="VEM CA NENEM"/>
-     <Header/>
-     <Body/>
-     <Footer autor="Isaque Ribeiro"/>
-     
-    
-
+      <Header title="Nome do site"/>
+      <Body/>
+      <Footer autor="Luciano Rocha"/>
 
     </>
   )

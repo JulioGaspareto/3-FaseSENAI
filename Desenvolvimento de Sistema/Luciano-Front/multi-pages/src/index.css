@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+@layer components {
+    .card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #AAA;
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 2rem;
+
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        line-height: 1.5;
+        margin: 10px 0;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    a {
+        background: blue;
+        color: #fff;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+
+
+
+        &:hover {
+            color: blue;
+            background: white;
+            border: 1px solid blue;
+        }
+    }
+}
